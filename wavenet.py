@@ -114,7 +114,7 @@ def wavelon_class_constructor(motherfunction=None, period=None, frame=None, sign
 
 def trainer(epochs, training, validation, net):
     track = []
-    for i in xrange(epochs):
+    for i in range(epochs):
         localtrain = training[:]
         shuffle(localtrain)
         for element in localtrain:
